@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="grid-container">
       <header>
-        <a href="#">React Record Store</a>
+        <a href="#test">React Record Store</a>
       </header>
       <main>Record List</main>
       <footer>All rights reserved.</footer>
