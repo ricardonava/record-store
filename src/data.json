@@ -2,43 +2,51 @@
   "records": [
     {
       "_id": "record1",
-      "title": "Record 1",
+      "title": "The Velvet Underground & Nico",
       "image": "/images/record1.jpg",
-      "description": "about record 1",
+      "description": "The Velvet Underground and Nico, 'The Velvet Underground & Nico' (1967)",
       "price": 3.55,
       "availableFormats": ["WAV", "AIFF"]
     },
     {
       "_id": "record2",
-      "title": "Record 2",
+      "title": "Abbey Road",
       "image": "/images/record2.jpg",
-      "description": "about record 2",
-      "price": 1.99,
+      "description": "The Beatles, 'Abbey Road' (1969)",
+      "price": 1.55,
       "availableFormats": ["WAV", "FLAC"]
     },
     {
       "_id": "record3",
-      "title": "Record 3",
+      "title": "Horses",
       "image": "/images/record3.jpg",
-      "description": "about record 3",
+      "description": "Patti Smith, 'Horses' (1975)",
       "price": 4.99,
       "availableFormats": ["FLAC", "AIFF"]
     },
     {
       "_id": "record4",
-      "title": "Record 4",
+      "title": "Ready to Die",
       "image": "/images/record4.jpg",
-      "description": "about record 4",
+      "description": "The Notorious B.I.G., 'Ready to Die' (1994)",
       "price": 1.99,
       "availableFormats": ["WAV"]
     },
     {
       "_id": "record5",
-      "title": "Record 5",
+      "title": "Led Zeppelin",
       "image": "/images/record5.jpg",
-      "description": "about record 5",
+      "description": "Led Zeppelin, 'Led Zeppelin' (1969)",
       "price": 2.99,
       "availableFormats": ["AIFF"]
+    },
+    {
+      "_id": "record6",
+      "title": "Dark Side of the Moon",
+      "image": "/images/record6.jpg",
+      "description": "Pink Floyd, 'Dark Side of the Moon' (1973)",
+      "price": 9.99,
+      "availableFormats": ["AIFF", "FLAC", "WAV"]
     }
   ]
 }
