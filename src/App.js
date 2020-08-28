@@ -12,8 +12,7 @@ class App extends Component {
       sort: "",
     };
   }
-
-  sortRecords = (event) => {
+sortRecords = (event) => {
     const sort = event.target.value;
     this.setState((state) => ({
       sort: sort,
@@ -43,7 +42,6 @@ class App extends Component {
       });
     }
   };
-
   render() {
     return (
       <div className="grid-container">
