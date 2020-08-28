@@ -63,7 +63,15 @@ class App extends Component {
     return (
       <div className="grid-container">
         <header>
+<<<<<<< HEAD
           <a href="#home">React Record Store</a>
+=======
+<<<<<<< HEAD
+          <a href="#">React Record Store</a>
+=======
+          <a href="#home">React Record Store</a>
+>>>>>>> 0.0.1
+>>>>>>> 7998da71fc509032ef0a52b4d0827223aeb151d9
         </header>
         <main>
           <div className="content">
