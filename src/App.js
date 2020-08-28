@@ -22,7 +22,7 @@ class App extends Component {
         } else if (sort === "highest") {
           return a.price < b.price ? 1 : -1;
         } else {
-          return a._id < b._id ? 1 : -1;
+          return a._id > b._id ? 1 : -1;
         }
       }),
     }));
@@ -31,14 +31,31 @@ class App extends Component {
     if (event.target.value === "") {
       this.setState({
         format: event.target.value,
-        records: DATA.records,
+        records: DATA.records.slice().sort((a, b) => {
+          if (this.state.sort === "lowest") {
+            return a.price > b.price ? 1 : -1;
+          } else if (this.state.sort === "highest") {
+            return a.price < b.price ? 1 : -1;
+          } else {
+            return a._id > b._id ? 1 : -1;
+          }
+        }),
       });
     } else {
+      const filteredRecords = DATA.records.filter(
+        (record) => record.availableFormats.indexOf(event.target.value) >= 0
+      );
       this.setState({
         format: event.target.value,
-        records: DATA.records.filter(
-          (record) => record.availableFormats.indexOf(event.target.value) >= 0
-        ),
+        records: filteredRecords.sort((a, b) => {
+          if (this.state.sort === "lowest") {
+            return a.price > b.price ? 1 : -1;
+          } else if (this.state.sort === "highest") {
+            return a.price < b.price ? 1 : -1;
+          } else {
+            return a._id > b._id ? 1 : -1;
+          }
+        }),
       });
     }
   };
@@ -46,7 +63,7 @@ class App extends Component {
     return (
       <div className="grid-container">
         <header>
-          <a href="#conflicts">React Record Store</a>
+          <a href="#home">React Record Store</a>
         </header>
         <main>
           <div className="content">
