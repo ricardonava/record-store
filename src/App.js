@@ -46,7 +46,7 @@ class App extends Component {
     return (
       <div className="grid-container">
         <header>
-          <a href="#conflicts">React Record Store</a>
+          <a href="#">React Record Store</a>
         </header>
         <main>
           <div className="content">
