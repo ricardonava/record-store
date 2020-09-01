@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 import formatCurrency from "../utils";
 
-export default class Records extends React.Component {
+export default class Records extends Component {
   render() {
     return (
       <div>
@@ -15,7 +15,12 @@ export default class Records extends React.Component {
                 </a>
                 <div className="record-price">
                   <div>{formatCurrency(record.price)}</div>
-                  <button className="button primary">Add To Cart</button>
+                  <button
+                    onClick={() => this.props.addToCart(record)}
+                    className="button primary"
+                  >
+                    Add To Cart
+                  </button>
                 </div>
               </div>
             </li>
